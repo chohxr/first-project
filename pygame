@@ -47,7 +47,7 @@ def crash(a, b):
 
 
 ss = obj()        
-ss.put_img("C:/Users/SAMSUNG/Desktop/python.game/red.png")
+ss.put_img("image/red.png")
 ss.change_size(80, 80)
 ss.x = round((size[0] - ss.sx)/2) 
 ss.y = size[1] - ss.sy - 30
@@ -131,7 +131,7 @@ while SB == 0:
     
     if space_go == True and k % 5 == 0:
         mm = obj()
-        mm.put_img("C:/Users/SAMSUNG/Desktop/pp_bullet.png")
+        mm.put_img("image/pp_bullet.png")
         mm.change_size(10,30)
         mm.x = round(ss.x + ss.sx/2 - mm.sx/2)
         mm.y = ss.y - mm.sy - 10
@@ -150,7 +150,7 @@ while SB == 0:
         
     if random.random() > 0.98: 
         aa = obj()
-        aa.put_img("C:/Users/SAMSUNG/Desktop/rock.png")
+        aa.put_img("image/rock.png")
         aa.change_size(40,40)
         aa.x = random.randrange(0, size[0]-aa.sx-round(ss.sx/2))
         aa.y = 10
